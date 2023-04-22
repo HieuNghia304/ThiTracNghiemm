@@ -1,0 +1,20 @@
+{
+    "mssql.objectExplorer.groupBySchema": false,
+    "mssql.connections": [
+        {
+            "server": "DESKTOP-GGTTM7I\\SQLEXPRESS",
+            "database": "HTTTNOnl",
+            "authenticationType": "SqlLogin",
+            "user": "sa",
+            "password": "",
+            "emptyPasswordInput": false,
+            "savePassword": true,
+            "profileName": "DESKTOP-GGTTM7I\\SQLEXPRESS",
+            "encrypt": "Mandatory",
+            "trustServerCertificate": true,
+            "connectTimeout": 15,
+            "commandTimeout": 30,
+            "applicationName": "vscode-mssql"
+        }
+    ]
+}

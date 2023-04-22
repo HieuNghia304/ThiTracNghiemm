@@ -10,6 +10,7 @@ const postCreateNewUser = (email, password, username, role, image) => {
     data.append('userImage', image);
     return axios.post('api/v1/participant', data);
 }
+
 const getAllUsers = () => {
     return axios.get('api/v1/participant/all');
 }
@@ -30,8 +31,8 @@ const DeleteUser = (userId) => {
 }
 
 const getUserWithPaginate = (page, limit) => {
-    return axios.delete(`api/v1/participant?page=${page}&limit=${limit}`);
-}
+    return axios.get(`api/v1/participant?page=${page}&limit=${limit}`);
+  }  
 
 const postLogin = (userEmail, userPassword) => {
     return axios.post(`api/v1/login`, { email: userEmail, password: userPassword });
@@ -44,7 +45,11 @@ const postRegister = (userEmail, userPassword, userName) => {
 //{ email: email, password: password });
 //}
 
+const getQuizByUser = () => {
+    return axios.get('/api/v1/quiz-by-participant');
+}
 export {
     postCreateNewUser, getAllUsers, putUpdateNewUser,
-    DeleteUser, getUserWithPaginate, postLogin, postRegister
+    DeleteUser, getUserWithPaginate, postLogin, 
+    postRegister, getQuizByUser
 }

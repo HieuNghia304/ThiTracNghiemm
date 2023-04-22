@@ -57,14 +57,14 @@ const ModalCreateUser = (props) => {
     }
 
     //call apis
-    //let data = {
-    //email: email,
-    //password: password,
-    //username: username,
-    //role: role,
-    //userImage: image
-    //}
-    //console.log(data)
+    // let data = {
+    // email: email,
+    // password: password,
+    // username: username,
+    // role: role,
+    // userImage: image
+    // }
+    // console.log(data)
 
     
 
